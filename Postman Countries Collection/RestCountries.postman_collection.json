@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "77df8986-cf92-4b22-8afc-235a12406e6f",
+		"name": "RestCountries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16656061"
+	},
+	"item": [
+		{
+			"name": "All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/all",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by country name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/:countryName",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						":countryName"
+					],
+					"variable": [
+						{
+							"key": "countryName",
+							"value": "germany"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by country name fulltext",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/:countryName",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						":countryName"
+					],
+					"query": [
+						{
+							"key": "fullText",
+							"value": "false",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "countryName",
+							"value": "germany"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country by Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/alpha/:code",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"alpha",
+						":code"
+					],
+					"variable": [
+						{
+							"key": "code",
+							"value": "ger"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country by List of code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/alpha?codes=col, pe, at",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"alpha"
+					],
+					"query": [
+						{
+							"key": "codes",
+							"value": "col, pe, at",
+							"description": "col, pe, at"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country by Curency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/currency/:curency",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"currency",
+						":curency"
+					],
+					"variable": [
+						{
+							"key": "curency",
+							"value": "idp"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country by Language",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/lang/:language",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"lang",
+						":language"
+					],
+					"variable": [
+						{
+							"key": "language",
+							"value": "spa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country by  Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/region/:region",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"region",
+						":region"
+					],
+					"variable": [
+						{
+							"key": "region",
+							"value": "europe",
+							"description": "europe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country by  Sub Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/subregion/:subRegion",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"subregion",
+						":subRegion"
+					],
+					"variable": [
+						{
+							"key": "subRegion",
+							"value": "south",
+							"description": "europe, south"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
